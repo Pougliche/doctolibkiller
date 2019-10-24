@@ -1,24 +1,22 @@
-# README
+Doctolibkiller Database 8.6 ; by Titouan G. & Viktor P.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby 2.5.1 is needed to run this database
+Don't forget to #bundle install before running tests !
 
-Things you may want to cover:
+This program will allow you to check through Doctolibkiller's database, here's a little guide to check through it :
 
-* Ruby version
+- $rails db:migrate to put all migrations up
 
-* System dependencies
+- $rails db:seed to create some data
 
-* Configuration
+- $rails console to ignite
 
-* Database creation
+- put $tp in front of your search to get the result in a nice table ! Using the gem "table print".
 
-* Database initialization
+- The database contains doctors, patients, appointments, medical specialties and cities. Each class goes as follows :
 
-* How to run the test suite
+Doctor, Patient, Appointment, Specialty, City
 
-* Services (job queues, cache servers, search engines, etc.)
+Exemple of search : $tp Doctor.all   > will show you the list of doctors in a nice table
 
-* Deployment instructions
-
-* ...
+Have fun with it !
